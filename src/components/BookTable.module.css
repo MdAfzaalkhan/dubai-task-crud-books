@@ -1,0 +1,9 @@
+/* BookTable styles */
+.edit-button {
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 5px 10px;
+  margin-right: 5px;
+}
