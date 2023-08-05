@@ -115,13 +115,18 @@ const App = () => {
 
   return (
     <div className={styles.container}>
-      <h1>Book Collection</h1>
-      <BookForm
-        onSubmit={editIndex !== null ? updateBook : addBook}
-        bookToEdit={editIndex !== null ? books[editIndex] : null}
-      />
-      <br />
-      <BookTable books={books} onEdit={setEditIndex} onDelete={deleteBook} />
+      <div className={styles.heading}>
+        <h1>Book Collection</h1>
+      </div>
+      <div className={styles.inputFields}>
+        <BookForm
+          onSubmit={editIndex !== null ? updateBook : addBook}
+          bookToEdit={editIndex !== null ? books[editIndex] : null}
+        />
+      </div>
+      <div className={styles.table}>
+        <BookTable books={books} onEdit={setEditIndex} onDelete={deleteBook} />
+      </div>
     </div>
   );
 };
